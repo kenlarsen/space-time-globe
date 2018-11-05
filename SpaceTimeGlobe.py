@@ -306,7 +306,6 @@ events = [ {"name":"earth"    ,"x":[0,0],"t":[0,10],"c":'bo-'},
 Xmax = max([j for i in [events[k]["x"] for k in range(0,3)] for j in i])*2
 Tmax = max([j for i in [events[k]["t"] for k in range(0,3)] for j in i])*2
 if Tmax > Xmax*3/4: Xmax = Tmax*3//4
-print(Xmax, Tmax)
 
 # allocate the plot area
 fig, ax = plt.subplots(figsize=(Xmax*2+1,Tmax+2), dpi=30)
@@ -321,7 +320,6 @@ lorentz.addevents(events)
 
 # Animate
 def init():
-    print("init")
     lorentz.init()
     return lorentz.update(boost.getBoost())
  
