@@ -1,3 +1,20 @@
+'''
+An interactive space-time globe written in Python
+
+The space-time globe is an idea that I initially saw on minutephysics: https://www.youtube.com/watch?v=Rh0pYtQG5wI
+This globe is such an intuitive and downright revolutionary way to present special relativity. 
+The Lorentz transformation comes to life and is far easier to understand and play with than using pure maths.
+
+This initial version is not refined in terms of user interaction, but does the trick of showing the basics. 
+It draws a space-time diagram with the time cone and a set of proper time curves for s=1,2,3,4,... 
+A number of events defined in the program are shown with different colors. Each points simultaneity lines 
+are shown with dotted lines in the same color as the event. The legend shows the events and their length in proper time.
+
+Kenneth Larsen
+kenbolarsen@gmail.com
+
+'''
+
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.path as path
